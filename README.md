@@ -64,3 +64,31 @@ Example config.json:
 # Output
 Run using “node compatibility-predictor.js” on the terminal or command line.
 Results will be printed to the console in JSON format.
+
+Example output:
+```json
+{
+  "scoredApplicants": [
+    {
+      "name": "John",
+      "score": "0.4"
+    },
+    {
+      "name": "Jane",
+      "score": "0.6"
+    },
+    {
+      "name": "Joe",
+      "score": "0.2"
+    },
+    {
+      "name": "Joe",
+      "score": "0.9"
+    },
+    {
+      "name": "ray",
+      "score": "0.0"
+    }
+  ]
+}
+```
