@@ -10,7 +10,7 @@ function printApplicantScoresInJson() {
 
 function scoreApplicants(applicants, attributeWeights) {
   return {
-    applicantScores: applicants.map((applicant) => {
+    scoredApplicants: applicants.map((applicant) => {
       const { name, attributes } = applicant;
       const score = calculateApplicantScore(attributes, attributeWeights);
       return { name, score };
