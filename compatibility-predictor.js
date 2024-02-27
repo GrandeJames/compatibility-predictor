@@ -1,15 +1,21 @@
 const data = require("./data.json");
+const config = require("./config.json");
 
 const { applicants } = data;
+const { attributeWeights } = config;
 
-function scoreApplicants(applicants, attributeWeights) {
-  return JSON.stringify({
+function printApplicantScoresInJson() {
+  console.log(JSON.stringify(scoreApplicants(attributeWeights)));
+}
+
+function scoreApplicants(attributeWeights) {
+  return {
     scoreApplicants: applicants.map((applicant) => {
       const { name, attributes } = applicant;
       const score = calculateApplicantScore(attributes, attributeWeights);
       return { name, score };
     }),
-  });
+  };
 }
 
 function calculateApplicantScore(applicantAttributes, attributeWeights) {
@@ -28,5 +34,4 @@ function calculateApplicantScore(applicantAttributes, attributeWeights) {
   return formattedScore;
 }
 
-// Example usage
-console.log(scoreApplicants(applicants, { intelligence: 9, endurance: 1 }));
+printApplicantScoresInJson();
