@@ -26,15 +26,6 @@ Example data.json:
         "spicyFoodTolerance": 6
       }
     },
-    {
-      "name": "Mike",
-      "attributes": {
-        "intelligence": 3,
-        "strength": 2,
-        "endurance": 9,
-        "spicyFoodTolerance": 5
-      }
-    }
   ],
   "applicants": [
     {
@@ -55,30 +46,6 @@ Example data.json:
         "spicyFoodTolerance": 2
       }
     },
-    {
-      "name": "Joe",
-      "attributes": {
-        "intelligence": 1,
-        "strength": 1,
-        "endurance": 1,
-        "spicyFoodTolerance": 10
-      }
-    },
-    {
-      "name": "Joe",
-      "attributes": {
-        "intelligence": 1,
-        "strength": 1,
-        "endurance": 1,
-        "spicyFoodTolerance": 10
-      }
-    },
-    {
-      "name": "ray",
-      "attributes": {
-        "quickness": 1
-      }
-    }
   ]
 }
 ```
