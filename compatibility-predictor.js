@@ -5,12 +5,12 @@ const { applicants } = data;
 const { attributeWeights } = config;
 
 function printApplicantScoresInJson() {
-  console.log(JSON.stringify(scoreApplicants(attributeWeights)));
+  console.log(JSON.stringify(scoreApplicants(applicants, attributeWeights), null, 2));
 }
 
-function scoreApplicants(attributeWeights) {
+function scoreApplicants(applicants, attributeWeights) {
   return {
-    scoreApplicants: applicants.map((applicant) => {
+    applicantScores: applicants.map((applicant) => {
       const { name, attributes } = applicant;
       const score = calculateApplicantScore(attributes, attributeWeights);
       return { name, score };
